@@ -1,0 +1,57 @@
+\documentclass[noframe,twoside]{ncuthesisCJK}   
+\usepackage{makeidx}             % for index
+\usepackage{layout}
+\usepackage[]{todonotes}
+\dept{機械工程研究所}
+\degree{碩/博士}
+\title{模版 {\sf ncuthesisCJK} 使用說明}
+\subtitle{\sf An example in \LaTeX/Xe\LaTeX}
+%\subtitle{}=空白
+\author{羅吉昌}
+\mprof{羅吉昌}
+\sprof{共同指導: 甲教授\\ \hspace{2.3cm} 乙教授}                         % 填入"共同指導: 某某某"
+\degreedate{中~華~民~國~一百零二~年~六~月}
+\copyyear{2012}
+\def\XeLaTeX{Xe\LaTeX}  % Only in CJK 
+\input{mypreamble}             % 自訂巨集多 收起來
+                                 % 自訂巨集少 直接寫出
+
+%\includeonly{chapter2}          % 單獨編譯此檔
+\makeindex                       % 告訴\LaTeX要做索引
+\begin{document}                 % 宣告結束   本文開始
+\begin{CJK}{UTF8}{bkai}          %----------------------
+\CJKhorz
+\fontsize{14pt}{20pt}\selectfont % 可調間距以便閱讀%
+\pagenumbering{alph}             % to cheat latex
+\maketitle                       % 論文封面
+\setboolean{printcopyright}{true}
+\maketitle                       % 書名面
+\cleardoublepage
+\addtocontents{toc}{~\hfill\textbf{頁次}\par}
+\includepdf[pages=-,scale=0.9]{myfile.pdf} % 插入其他表格
+                                 % \frontmatter
+\pagenumbering{roman}            % 羅馬數字編頁
+\include{abstractcn}            % 中文摘要 abstractcn環境
+\include{abstracten}             % 英文摘要 abstracten
+\include{acknowledge}            % 謝誌     acknowledge
+\include{lists}
+\include{symbol}                 % 符號說明     symbols 環境
+\cleardoublepage
+
+\pagenumbering{arabic}           % 阿拉伯數字編頁
+                                 % \mainmatter
+\include{chapter1}               % 第一章    (自行寫入)
+\include{chapter2}               % 第二章    (自行寫入)
+\include{chapter3}               % 第二章    (自行寫入)
+                                 % \backmatter
+\include{bibli}                  % 文獻      (自行寫入)
+\include{appendix}               % 若有需要 使用appendA/B環境
+ 
+
+\clearpage
+\end{CJK}                        
+%---------------------
+\clearpage
+\bookbone                        % 短書脊製作
+{\centering\layout}
+\end{document}                   % 本文結束
