@@ -48,7 +48,7 @@ pdftitle={An example in TeX/LaTeX/XeLaTeX}]{hyperref}       % 超聯結
 
 \titleformat{\chapter}[block]
 {\centering\Huge\bfseries}
-{{\CJKnumber{\thechapter}、}}{1pc}{}
+{\thechapter .}{1pc}{}
 %----------------------------
 \titleformat{\section}[block]{\flushleft\LARGE}
 {\LARGE\enspace\sf\thesection\enspace}{1pc}{}
@@ -57,21 +57,12 @@ pdftitle={An example in TeX/LaTeX/XeLaTeX}]{hyperref}       % 超聯結
 {\filright\enspace\LARGE\sf\thesubsection\enspace}{1pc}{}
 %============================   % for Chinese toc 
 \titlecontents{chapter}[0em]{}  
-{\CJKnumber{\thecontentslabel}、\hspace{4em}}
+{\thecontentslabel . \hspace{4em}}
 {}{\titlerule*{.}\contentspage}
 
 %----------------------------
-\renewcommand{\indexname}{\protect \centering \bf索~引}
-\renewcommand{\bibname}{\protect \centering \bf參~考~文~獻}
-\renewcommand{\listfigurename}{\protect\centering\bf圖~目~錄}
-\renewcommand{\listtablename}{\protect\centering\bf表~目~錄}
-\renewcommand{\contentsname}{\protect \centering \bf目~錄}
-\renewcommand{\figurename}{\protect \centering \bf 圖}
-\renewcommand{\tablename}{\protect \centering \bf 表}
-%\renewcommand*\l@chapter{\@dottedtocline{0}{1em}{5em}}
 \renewcommand*\l@section{\@dottedtocline{1}{1em}{5em}}
 \renewcommand*\l@subsection{\@dottedtocline{2}{2em}{4em}}
-%\renewcommand*\l@subsubsection{\@dottedtocline{3}{4.3em}{3em}}
 
 % DECLARATIONS  宣告
 
