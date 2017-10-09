@@ -25,11 +25,11 @@ git pull # (download and update the repository)
 
 git add filename/directory # (add file)
 
-git add -p filename/directory # (add file line by line)
+git add -p filename # (add file line by line)
 
 git st # (check status)
 
-git commit -m "commit message"
+git ci -m "commit message"
 
 git push # this puts the commits on the web in your branch only (the master is unaffected)
 ```
