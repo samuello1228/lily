@@ -93,28 +93,55 @@ where $N$ is the column density (molecule cm$^{-2}$), $A(\nu)$ is the absorbance
 
 \section{Reaction Rate Laws}
 \label{sec:Reaction_Rate_Laws}
-%In this section, we will introduce rate reaction of a consecutive reaction and the concept of pseudo first order which we used to fit our reaction product against irradiation time. The rate of a chemical reaction is the relation between change in concentration of a substance per unit of time. i.e. For  a balanced chemical reaction, A → 2B, the rate of reaction is . The formation rate of B is 2 times destruction rate of A.
+In this section, we will introduce rate reaction of a consecutive reaction and the concept of pseudo first order which we used to fit our reaction product against irradiation time. The rate of a chemical reaction is the relation between change in concentration of a substance per unit of time. i.e. For a balanced chemical reaction, A $\rightarrow$ 2B, the rate of reaction is $- \frac{\Delta [A]}{\Delta t}$. The formation rate of B is 2 times destruction rate of A.
 
-%When there are two reactants, with balanced equation 2 A + B → 2C. The reaction is a third order overall, second order in A and first order in B. rate = k [A]2[B].
+When there are two reactants, with balanced equation 2A + B $\rightarrow$ 2C. The reaction is a third order overall, second order in A and first order in B. rate $ = k [A]^2 [B]$.
 
-%To determine the order of a reaction, we can only determine it experimentally. One way is method of initial rates. By changing concentration of initial reactants, and find out the initial reaction rate, we may find out the relation between two reactants and the rate. i.e. Rate=k[A]x[B]y.
-%For a reaction with only one reactant [R], we may use the relation between time and reactant concentration to plot graphs to find out the order or reaction.
-%For a zero order reaction, the rate is not depending on any reactant that it is a constant. The Rate =  .By calculus, .
-%For a first order reaction,  . By calculus ln[R]t = -k t +ln [R]0
-%For a second order reaction,  . By calculus.
-%Hence, if we get a straight line in a plot between time as x-axis, and the concentration of reactant as y axis, it is a zeroth order reaction, similarly, in first order reactions, we get straight line in plots between ln[R] as y axis and t in x axis.
+To determine the order of a reaction, we can only determine it experimentally. One way is method of initial rates. By changing concentration of initial reactants, and find out the initial reaction rate, we may find out the relation between two reactants and the rate. i.e. rate $ = k [A]^x [B]^y $.
+For a reaction with only one reactant $[R]$, we may use the relation between time and reactant concentration to plot graphs to find out the order or reaction.
+For a zero order reaction, the rate is not depending on any reactant that it is a constant. The rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]^0$. By calculus, $[R]_0 - [R]_t = kt$.
 
-%In a reaction with one reactant in excess, the rate of reaction is called pseudo first order reaction where Pseudo means pretended. For A+B → C, rate = k [A][B]. As [B]o>>[A]o, change of [B] is negligible that [B] ~ [B]o. Therefore, [B] is assumed to be a constant and included in the rate constant k.
+For a first order reaction, rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]$. By calculus, $\ln [R]_t = -kt + \ln [R]_0$.
 
-%For a consecutive reaction, where A → B → C that the produced product will not convert back as reactant. A simple example is radioactive decay. At t=0,  [A]=[A]o, [B]=0, [C]=0 and at all times, [A]+[B]+[C]=[A]o.  The rate equations are as follows:
+For a second order reaction, rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]^2$. By calculus, $\frac{1}{[R]_t} - \frac{1}{[R]_0} = kt$.
 
+Hence, if we get a straight line in a plot between time as x-axis, and the concentration of reactant as y axis, it is a zeroth order reaction, similarly, in first order reactions, we get straight line in plots between $\ln [R]$ as y axis and t in x axis.
 
+In a reaction with one reactant in excess, the rate of reaction is called pseudo first order reaction where pseudo means pretended. For A+B $\rightarrow$ C, rate $ = k[A][B]$. As $[B]_0 \gg [A]_0$, change of $[B]$ is negligible that $[B] \sim [B]_0$. Therefore, $[B]$ is assumed to be a constant and included in the rate constant k.
 
-%By equation (2.4), we get
-%subsitute into equation (2.5), we get B]=, by solve differential equation, we get equation (2.6).
+For a consecutive reaction, where A $\rightarrow$ B $\rightarrow$ C that the produced product will not convert back as reactant. A simple example is radioactive decay. At $t=0$, $[A]=[A]_0$, $[B]=0$, $[C]=0$ and at all times, $[A]+[B]+[C]=[A]_0$. The rate equations are as follows:
+\begin{equation}
+- \frac{\Delta [A]}{\Delta t} = k_1 [A]
+\label{eq:rate1}
+\end{equation}
 
-%Finally, since [C]=[A]o-[B]-[A], by equation (2.7), we get
+\begin{equation}
+- \frac{\Delta [B]}{\Delta t} = k_1 [A] - k_2 [B]
+\label{eq:rate2}
+\end{equation}
 
+\begin{equation}
+- \frac{\Delta [C]}{\Delta t} = k_2 [B]
+\label{eq:rate3}
+\end{equation}
+By equation \ref{eq:rate1}, we get
+\begin{equation}
+[A] = [A]_0 e^{-k_1 t}
+\label{eq:rate4}
+\end{equation}
+By substituting equation \ref{eq:rate4} into equation \ref{eq:rate2}, we get
 
-%Since the ratio of CH4 and NH3 are 3:2, 1:5, 1:10 and 1:20, hence, we may apply pseudo first order. By Kim & Kaiser (2011), B is the intermediate methylamine CH3NH2.
-%We may use consecutive reaction equation 2.8 to fit the product CN- because there are no obvious peaks at 2200cm-1 that there is no destructive pathway of CN-.
+\begin{equation}
+- \frac{\Delta [B]}{\Delta t} + k_2 [B] = k_1 [A]_0 e^{-k_1 t}
+\label{eq:rate5}
+\end{equation}
+After solving the differential equation \ref{eq:rate5} , we get
+\begin{equation}
+[B] = \frac{k_1}{k_2 - k_1} (e^{-k_1 t} - e^{-k_2 t}) [A]_0
+\label{eq:rate6}
+\end{equation}
+Finally, since $[C]=[A]_0 -[B]-[A]$, by equation \ref{eq:rate4} and \ref{eq:rate6}, we get
+\begin{equation}
+[C] = \Bigg( 1+ \frac{k_1 e^{-k_2 t} - k_2 e^{-k_1 t}}{k_2 - k_1} \Bigg) [A]_0
+\label{eq:rate7}
+\end{equation}
