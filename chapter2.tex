@@ -34,15 +34,21 @@ The samples are prepared in situ in our gasline system. It contains four stainle
 \subsection{Vacuum-UV source}
 \label{sec:Vacuum_UV_source}
 
-In order to simulate the photoprocessing of vacuum ultraviolet (VUV) irradiation onto the interstellar ices and ices on planetary bodies, including KBOs, the ice mixtures are irradiated with a T-type Microwave-Discharged Hydrogen-flow lamp (MDHL). The molecular hydrogen with pressure 0.4 torr flows through the lamp with a support of a mechanical pump. Using a 2.4 GHz microwave generator and high voltage discharge, a low pressure plasma is produced in the Evenson cavity. Figure 2.2.1 shows a cross-section of T-type quartz tube; the middle part of the T-type quartz tube is being tunned by a ceramic rod that is called Evenson cavity.  In order to measure the photon flux in situ, we use an 88 \% transmittance nickel mesh with its photoelectric efficiency being obtained by high-flux beamline in National Synchrotron and a SXUV 100 photodiode calibrated by NIST. A MgF$_2$ window is placed between the lamp and the sample holder to prevent penetration of VUV photons with wavelength shorter than 114nm, leads to a cut off at 114nm. Figure 2.2.2 shows a VUV emission spectrum of a MDHL. It consists in Ly-α (121.6nm) and H$_2$ molecular emission in 110-180 nm range. Chen et al. (2014) showed that the spectral characteristics of the VUV light emitted in this range depends on the gas type (mixture of H$_2$ with He or Ar etc), pressure of H$_2$ and lamp geometry. Throughout those configurations stated there, we adopted 0.4 torr molecular hydrogen and T-type MDHL that produces VUV irradiation at 114-170 nm with 19.1 \% of Ly-α and a mean photon energy of 9.27 eV. The photon flux is $6.4 \times 10^{13}$ photons $cm^{-2} s^{-1}$ at sample position.
-
-
-Figure 2.2.1 The cross-section of MDHL (T-type geometry) (Quoted from Chen et al. 2014).
-
-
-
-
-Figure 2.2.2, VUV spectra of MDHL (T-type geometry, 110-180 nm) with different H$_2$ pressure inside the lamp(Quoted from Chen et al. 2014).
+In order to simulate the photoprocessing of vacuum ultraviolet (VUV) irradiation onto the interstellar ices and ices on planetary bodies, including KBOs, the ice mixtures are irradiated with a T-type Microwave-Discharged Hydrogen-flow lamp (MDHL). The molecular hydrogen with pressure 0.4 torr flows through the lamp with a support of a mechanical pump. Using a 2.4 GHz microwave generator and high voltage discharge, a low pressure plasma is produced in the Evenson cavity. Figure \ref{fig:T_type} shows a cross-section of T-type quartz tube; the middle part of the T-type quartz tube is being tunned by a ceramic rod that is called Evenson cavity.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter2/T_type.jpg}
+\caption{The cross-section of MDHL (T-type geometry) (Quoted from Chen et al. 2014).}
+\label{fig:T_type}
+\end{figure}
+In order to measure the photon flux in situ, we use an 88 \% transmittance nickel mesh with its photoelectric efficiency being obtained by high-flux beamline in National Synchrotron and a SXUV 100 photodiode calibrated by NIST. A MgF$_2$ window is placed between the lamp and the sample holder to prevent penetration of VUV photons with wavelength shorter than 114nm, leads to a cut off at 114nm. Figure \ref{fig:MDHL} shows a VUV emission spectrum of a MDHL.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter2/MDHL.jpg}
+\caption{VUV spectra of MDHL (T-type geometry, 110-180 nm) with different H$_2$ pressure inside the lamp(Quoted from Chen et al. 2014).}
+\label{fig:MDHL}
+\end{figure}
+It consists in Ly-α (121.6nm) and H$_2$ molecular emission in 110-180 nm range. Chen et al. (2014) showed that the spectral characteristics of the VUV light emitted in this range depends on the gas type (mixture of H$_2$ with He or Ar etc), pressure of H$_2$ and lamp geometry. Throughout those configurations stated there, we adopted 0.4 torr molecular hydrogen and T-type MDHL that produces VUV irradiation at 114-170 nm with 19.1 \% of Ly-α and a mean photon energy of 9.27 eV. The photon flux is $6.4 \times 10^{13}$ photons $cm^{-2} s^{-1}$ at sample position.
 
 \subsection{Extreme EUV source}
 \label{sec:Extreme_EUV_source}
@@ -68,9 +74,14 @@ We use 1 K/min to warmup the substrate to 300 K to demonstrate effects of a new 
 
 \section{Infra-red spectroscopy and the Beer’s Law}
 \label{sec:spectroscopy}
-We used infra-red spectroscopy extensively in chapter 3 and 4, it is a powerful tool in studying molecular interactions during irradiation and warmup. We choose infra-red rather than Ramen spectroscopy because infra-red has lower energy that it would not change the structure of the ice mixture nor breaking any of the bonds. With different vibration modes, the energy absorbed by molecules are quantized. With the energy of absorption bands in infra-red spectrum, we may identify the functional group of the species. To simply classify, molecules can have, from less energetic, translational, rotational and vibrational motions. Generally, vibrational motions can be divided into stretching and bending. Stretching needs more energy than bending. For stretching, there exist Symmetric and Asymmetric stretching, while bending can be divided into In-plane Scissoring, rocking and out of plane Wagging and Twisting (Figure 2.4).\\
+We used infra-red spectroscopy extensively in chapter 3 and 4, it is a powerful tool in studying molecular interactions during irradiation and warmup. We choose infra-red rather than Ramen spectroscopy because infra-red has lower energy that it would not change the structure of the ice mixture nor breaking any of the bonds. With different vibration modes, the energy absorbed by molecules are quantized. With the energy of absorption bands in infra-red spectrum, we may identify the functional group of the species. To simply classify, molecules can have, from less energetic, translational, rotational and vibrational motions. Generally, vibrational motions can be divided into stretching and bending. Stretching needs more energy than bending. For stretching, there exist Symmetric and Asymmetric stretching, while bending can be divided into In-plane Scissoring, rocking and out of plane Wagging and Twisting (Figure \ref{fig:vibration}).\\
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter2/vibration.png}
+\caption{Different vibrational modes of a three atom molecule.}
+\label{fig:vibration}
+\end{figure}
 
-Figure 2.4 Different vibrational modes of a three atom molecule.
 By Beer’s Law, we may calculate the column density of the molecule with its functional groups, which are used to plot figures in chapter 3 and 4. Beer Lambert’s Law suggest that when light passes through a medium, amount of light absorbed is proportional to density and path length of the medium. Assume the known intensity beam $I_{0}(\nu)$ passes through the medium and beam intensity become $I(\nu)$. The transmittance $T(\nu)$ is defined by equation \ref{eq:transmittance}. \\
 \begin{equation}
 T(\nu) = \frac{I(\nu)}{I_{0}(\nu)}
