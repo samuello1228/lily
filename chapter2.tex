@@ -67,15 +67,17 @@ We use 1 K/min to warmup the substrate to 300 K to demonstrate effects of a new 
 We used infra-red spectroscopy extensively in chapter 3 and 4, it is a powerful tool in studying molecular interactions during irradiation and warmup. We choose infra-red rather than Ramen spectroscopy because infra-red has lower energy that it would not change the structure of the ice mixture nor breaking any of the bonds. With different vibration modes, the energy absorbed by molecules are quantized. With the energy of absorption bands in infra-red spectrum, we may identify the functional group of the species. To simply classify, molecules can have, from less energetic, translational, rotational and vibrational motions. Generally, vibrational motions can be divided into stretching and bending. Stretching needs more energy than bending. For stretching, there exist Symmetric and Asymmetric stretching, while bending can be divided into In-plane Scissoring, rocking and out of plane Wagging and Twisting (Figure 2.4).\\
 
 Figure 2.4 Different vibrational modes of a three atom molecule.
-By Beer’s Law, we may calculate the column density of the molecule with its functional groups, which are used to plot figures in chapter 3 and 4. Beer Lambert’s Law suggest that when light passes through a medium, amount of light absorbed is proportional to density and path length of the medium. Assume the known intensity beam $Io(v)$ passes through the medium and beam intensity become $I(v)$. The transmittance is equation (2.1).
-\\
-%equation(2.1)
-%\\
-%The absorbance  is shown in equation (2.2).
-%\\
-%(2.2)
-%\\
-%where  is number density (molecules / cm$^3$),  is the path length (cm), is the cross-section ($cm^2/molecule$) of corresponding frequency . This equation is known as Lambert Beer’s Law.
+By Beer’s Law, we may calculate the column density of the molecule with its functional groups, which are used to plot figures in chapter 3 and 4. Beer Lambert’s Law suggest that when light passes through a medium, amount of light absorbed is proportional to density and path length of the medium. Assume the known intensity beam $I_{0}(\nu)$ passes through the medium and beam intensity become $I(\nu)$. The transmittance $T(\nu)$ is defined by equation \ref{eq:transmittance}. \\
+\begin{equation}
+T(\nu) = \frac{I(\nu)}{I_{0}(\nu)}
+\label{eq:transmittance}
+\end{equation}
+Also, the absorbance $a(\nu)$ is defined by equation \ref{eq:absorbance}. \\
+\begin{equation}
+a(\nu) = - \ln T(\nu) = - \ln \frac{I(\nu)}{I_{0}(\nu)} = n l \sigma(\nu)
+\label{eq:absorbance}
+\end{equation}
+where $n$ is number density (molecules/cm$^3$), $l$ is the path length (cm), $\sigma(\nu)$ is the cross-section (cm$^2$/molecule) of corresponding frequency $\nu$. This equation is known as Lambert Beer’s Law.
 
 %As the ice mixture in our thesis are at 14K, the peaks of absorbance are often a broadband due to coupling between neighbor molecules. Therefore, we can integrate the whole band of the peak equation (2.2) with respect to frequency and use the absorbance strength (A - value) in literatures to calculate the column densities of the ices by equation (2.3).
 
