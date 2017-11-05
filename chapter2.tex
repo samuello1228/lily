@@ -77,14 +77,15 @@ Also, the absorbance $a(\nu)$ is defined by equation \ref{eq:absorbance}. \\
 a(\nu) = - \ln T(\nu) = - \ln \frac{I(\nu)}{I_{0}(\nu)} = n l \sigma(\nu)
 \label{eq:absorbance}
 \end{equation}
-where $n$ is number density (molecules/cm$^3$), $l$ is the path length (cm), $\sigma(\nu)$ is the cross-section (cm$^2$/molecule) of corresponding frequency $\nu$. This equation is known as Lambert Beer’s Law.
+where $n$ is number density (molecules/cm$^3$), $l$ is the path length (cm), $\sigma(\nu)$ is the cross-section (cm$^2$/molecule) of corresponding frequency $\nu$. This equation is known as Lambert Beer’s Law. \\
 
-%As the ice mixture in our thesis are at 14K, the peaks of absorbance are often a broadband due to coupling between neighbor molecules. Therefore, we can integrate the whole band of the peak equation (2.2) with respect to frequency and use the absorbance strength (A - value) in literatures to calculate the column densities of the ices by equation (2.3).
+As the ice mixture in our thesis are at 14K, the peaks of absorbance are often a broadband due to coupling between neighbor molecules. Therefore, we can integrate the whole band of the peak equation \ref{eq:absorbance} with respect to frequency and use the absorbance strength (A value) in literatures to calculate the column densities $N$ of the ices by equation \ref{eq:column_density}.
 
-%(2.3)
-
-%Where  is the column density (molecule cm-2),  is the absorbance strength (cm molecule-1).
-
+\begin{equation}
+N = \frac{\int a(\nu) \mathrm{d}\nu}{A(\nu)}
+\label{eq:column_density}
+\end{equation}
+where $N$ is the column density (molecule cm$^{-2}$), $A(\nu)$ is the absorbance strength (cm molecule$^{-1}$).
 
 %2.5 Reaction Rate Laws
 %In this section, we will introduce rate reaction of a consecutive reaction and the concept of pseudo first order which we used to fit our reaction product against irradiation time. The rate of a chemical reaction is the relation between change in concentration of a substance per unit of time. i.e. For  a balanced chemical reaction, A → 2B, the rate of reaction is . The formation rate of B is 2 times destruction rate of A.
