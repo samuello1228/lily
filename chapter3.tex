@@ -69,7 +69,7 @@ Wavenumber (cm$^{-1}$) & Assignment  & Vibration & FWHM & A value ($\times 10^{-
 1070 & NH$_3$ & "umbrella mode" & 68 & 1.7 & 1 \\
 \hline
 \end{tabular}
-Reference: 1. d'Hendecourt and Allamandola (1986) 2. Moore and Hudson (1998) 3. noble et al. (2013)
+Reference: 1. d'Hendecourt and Allamandola (1986) 2. Moore and Hudson (1998) 3. Noble et al. (2013)
 \end{table}
 
 \section{Reaction mechanisms}
@@ -94,7 +94,7 @@ CH_4 + hv \rightarrow CH_3
 \label{eq:C2H6}
 \end{equation}
 
-The energy required to produce 1 CH$_3$ radical from CH4 is 4.42 eV. 2 CH$_3$ radicals recombine to form C$_2$H$_6$ releases 3.74 eV. Therefore, equation \ref{eq:C2H6} is a no-barrier exothermic process. However, C$_2$H$_6$ is not detected in CH$_4$+NH$_3$=1:20 ice mixtures. Figure \ref{fig:lab_C2H6} shows the temporal formation column density of C$_2$H$_6$ in different configurations of irradiated ice mixtures.  As the formation only depends on CH$_4$, we may use first order kinetics equation
+The energy required to produce 1 CH$_3$ radical from CH4 is 4.42 eV. 2 CH$_3$ radicals recombine to form C$_2$H$_6$ releases 3.74 eV. Therefore, equation \ref{eq:C2H6} is a no-barrier exothermic process. However, C$_2$H$_6$ is not detected in CH$_4$+NH$_3$=1:20 ice mixtures. Figure \ref{fig:lab_C2H6} shows the temporal formation column density of C$_2$H$_6$ in different configurations of irradiated ice mixtures.  As the formation only depends on CH$_4$, we may use first order kinetics equation to fit the column density versus photon dose.
 \begin{equation}
 [A] = [A]_0(1 - e^{-k_1 t})
 \label{eq:1step}
@@ -109,26 +109,91 @@ to fit the formation of C$_2$H$_6$. The fitting results are shown in table \ref{
 \end{figure}
 
 \begin{table}[htbp]
-\caption{The strength of absorbance adopted in this thesis measured in literatures of pure ice samples}
+\caption{The fitting results of C$_2$H$_6$ by [C$_2$H$_6$]=[C$_2$H$_6$]$(1 - e^{-k_1 t})$}
 \label{tab:fittingC2H6}
 \begin{tabular}{ccc}
 \hline
 \hline
 Ratio of CH$_4$+NH$_3$ & A (x10$^{15}$ molecules cm$^{-2}$) & k (x10$^{-17}$ photon$^{-1}$) \\
+\hline
 1:10 & 2.90 $\pm$ 1.25 & 0.92 $\pm$ 0.15 \\
 1:5 & 4.16 $\pm$ 0.28 & 2.28 $\pm$ 0.28 \\
 3:2 & 19.2 $\pm$ 0.15 & 5.28 $\pm$ 0.25 \\
 \hline
 \end{tabular}
+\end{table}
+
+From table \ref{tab:fittingC2H6}, production rate is also proportional to the initial CH$_4$ concentration.
 
 
 \subsection{C$_3$H$_8$}
 
-The peak positioned at 2960 cm$^{-1}$ belongs to –CH$_2$- so we assigned that as C$_3$H$_8$, as the shortest carbon chain. The signal to noise ratio in CH$_4$+NH$_3$ = 1:10 is poor that we can hardly quantize the amount of C$_3$H$_8$ (figure \ref:{fig:C2H6}).
+The peak positioned at 2960 cm$^{-1}$ belongs to –CH$_2$- so we assigned that as C$_3$H$_8$, as the shortest carbon chain. The signal to noise ratio in CH$_4$+NH$_3$ = 1:10 is poor that we can not quantize the amount of C$_3$H$_8$ (figure \ref{fig:C2H6}).
 
+It is a secondary product formed by a combination of either C$_2$H$_6$ + CH$_2$ (equation \ref{eq:C3H81})or C$_2$H$_4$ + CH$_4$ (equation \ref{eq:C3H82}).
+\begin{equation}
+C_2H_6 + CH_2 \rightarrow C_3H_8
+\label{eq:C3H81}
+\end{equation}
+\begin{equation}
+C_2H_4 + CH_4 \rightarrow C_3H_8
+\label{eq:C3H82}
+\end{equation}
 
+By modern peak fitting method, we deconvoluted the overlapped C$_2$H$_6$ and C$_3$H$_8$ into two gaussians.
 
 \subsection{CN$^-$}
 
-From infra-red absorption spectrum and their positions, we assigned the peak 2086 cm$^{-1}$ to CN$^-$  but not a combination of HCN and CN$^-$ because of we cannot observe the HCN bending mode located at 848 cm$^{-1}$. Although in the case CH$_4$ + NH$_3$ = 3:2, we may observe a peak located at 820 cm$^{-1}$, the peak is with a FWHM half of HCN and it disappeared at 50 K. Since 50 K is the desorbing temperature of C$_2$H$_6$ and the position is v12 mode of C$_2$H$_6$, we assign the 820 cm$^{-1}$ peak as C$_2$H$_6$. As the absence of HCN bending mode, we may assign our peak located at 2086 cm$^{-1}$ as CN$^-$. Other assignments such as C$_2$H$_6$ and C$_3$H$_8$ are observed with multiple peaks.\\
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter3/CN.eps}
+\caption{The the infra-red spectrum of CH$_4$ + NH$_3$ ice mixtures of C$_2$H$_6$ and C$_3$H$_8$ before irradiation (dashed) and VUV irradiated ice mixtures provided by MDHL. }
+\label{fig:CN}
+\end{figure}
+
+From infra-red absorption spectrum (figure \ref{fig:CN}) and their positions, we assigned the peak 2086 cm$^{-1}$ to CN$^-$  but not a combination of HCN and CN$^-$. The assignment is based on a absence in CN bending mode at 848 cm$^{-1}$. In the case CH$_4$ + NH$_3$ = 3:2, we may observe a peak located at 820 cm$^{-1}$, which is with a FWHM half of HCN and it is eliminated at 50 K during the warm-up phase. Since 50 K is the desorbing temperature of C$_2$H$_6$ and the peak position is the close to v12 mode of C$_2$H$_6$, we believe that the 820 cm$^{-1}$ peak is contributed by C$_2$H$_6$. Therefore, we may assign our peak located at 2086 cm$^{-1}$ as purely CN$^-$.\\
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter3/CNmechanism}
+\caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011). }
+\label{fig:CNmechanism}
+\end{figure}
+
+The formation mechanism of CN$^-$ is proposed by Kim and Kaiser(2011). CH$_4$ and NH$_3$ irradiated by photon to become CH$_3$ and NH$_2$ radical (figure \ref{CNmechanism}, followed by propagation and recombination of radicals becoming CH$_3$NH$_2$ and dehydrogenation and acid-base reaction to form CN$^-$.
+This formation mechanism also applies in our photon irradiation experiments because we can also detect the methylamine during our warm-up phase. The ion fragment with m/z=31 is assigned as CH$_3$NH$_2$$^+$ and detectable in all ratios of our CH$_4$+NH$_3$ experiments (figure \ref{Mass31}).
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter3/Mass31.eps}
+\caption{The m/z=31 detected by QMS during warm-up with heating rate 1 K/min in different configurations of ice mixtures.
+ }
+\label{fig:CNmechanism}
+\end{figure}
+
+By the deviation performed in section \ref{sec:Reaction_Rate_Laws}, we have a rate equation for consecutive reactions \ref{eq:rate7}. With one of the reactant larger than another, we applied the pseudo first order assumption. With equation \ref{eq:rate7}, we fitted the formation of CN$^-$ (figure \ref{fig:CNrate})and found that one of the rate constant is always larger than the other in all of the ratios. The fitting results are averaged by more than two experiments and are shown in table \ref{tab:CNrate}./Users/Lily/thesis
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter3/Overall_CN_rate.eps}
+\caption{The column density of CN$^-$ accumulated when different configurations of CH$_4$ + NH$_3$ ice mixtures are irradiated by VUV photons provided by MDHL. The dotted lines are fits of column densities by equation \ref{eq:rate7}.}
+\label{fig:CNrate}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{The fitting results of CN$^-$ by equation \ref{eq:rate7}}
+\label{tab:CNrate}
+\begin{tabular}{cccc}
+\hline
+\hline
+Ratio of CH$_4$+NH$_3$ & A (x10$^{16}$ molecules cm$^{-2}$) & k$_1$ (x10$^{-18}$ photon$^{-1}$) & k$_2$ (photon$^{-1}$)\\
+\hline
+1:20 & 4.75 $\pm$ 0.40 & 0.70 $\pm$ 0.09 & >1 \\
+1:10 & 4.51 $\pm$ 0.18 & 1.33 $\pm$ 0.13 & >1 \\
+1:5 & 4.61 $\pm$ 0.18 & 1.93 $\pm$ 0.19 & >1 \\
+3:2 & 2.24 $\pm$ 0.03 & 8.21 $\pm$ 0.70 & >1 \\
+\hline
+\end{tabular}
+\end{table}
 
