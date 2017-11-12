@@ -1,6 +1,9 @@
 \documentclass[noframe,twoside]{ncuthesisCJK}   
 \usepackage{makeidx}             % for index
 \usepackage{layout}
+\usepackage{apacite}
+\bibliographystyle{apacite}
+\bibliography{mybib}
 \usepackage[]{todonotes}
 \dept{Physics Department}
 \degree{碩士}
@@ -27,7 +30,7 @@
 \setboolean{printcopyright}{true}
 \maketitle                       % 書名面
 \cleardoublepage
-\addtocontents{toc}{~\hfill\textbf{頁次}\par}
+\addtocontents{toc}{~\hfill\textbf{page}\par}
 \includepdf[pages=-,scale=0.9]{myfile.pdf} % 插入其他表格
                                  % \frontmatter
 \pagenumbering{roman}            % 羅馬數字編頁
@@ -44,11 +47,10 @@
 \include{chapter2}               % 第二章    (自行寫入)
 \include{chapter3}               % 第三章    (自行寫入)
                                  % \backmatter
-\include{bibli}                  % 文獻      (自行寫入)
+%\include{bibli}                  % 文獻      (自行寫入)
 %\include{appendix}               % 若有需要 使用appendA/B環境
- 
 
-\clearpage
+
 \end{CJK}                        
 %---------------------
 \clearpage
