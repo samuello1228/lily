@@ -52,7 +52,7 @@ Reference: 1. Bossa et al 2008 2. Moore and Hudson 2003 3. Kim et al. 2010 4. So
 \end{table}
 
 
-We integrated the area and divided by the absorption strength stated in table 3.2. Although we understand that there is an average error in absorption strengths of no more than 10 \%  when the pure ice is diluted in N$_2$ and H$_2$O (Richey and Gerakines 2012). In our case, absorption strengths changes after CH$_4$ and NH$_3$ are mixed. For example, according to d' Hendecourt and Allamandola (1986), the band of NH$_3$ located at 1070 cm$^{-1}$ would not change much (from $1.1 \times 10^{-17}$ to $1.2 \times 10^{-17}$) when excess water is added to pure NH$_3$ and therefore, we may use the same absorption strength throughout our discussion to give a brief concept on what is the column density of the species and how is the absorption area changes when concentrations of ice mixtures and photon energy are changed. For the case of CN$^-$, we know that CN$^-$ has a bond order =3 by its molecular orbitals which is different from CN stretching (bond order 2.5) which is very sensitive to the matrix environment. As an example, by Borget et al. (2012), the CN stretch in amino acetonitrile change by factor of 2 between the pure molecule itself and in a mixture of amino acetonitrile and H$_2$O (1:3). Here, we adopt the absorption strengths stated in Table \ref{tab:Absorbance} and neglect the error in absorption strengths.\\
+We integrated the area and divided by the absorption strength stated in table 3.2. Although we understand that there is an average error in absorption strengths of no more than 10 \%  when the pure ice is diluted in N$_2$ and H$_2$O \cite{richey2012near}. In our case, absorption strengths changes after CH$_4$ and NH$_3$ are mixed. For example, according to d' Hendecourt and Allamandola \cite{d1986time}, the band of NH$_3$ located at 1070 cm$^{-1}$ would not change much (from $1.1 \times 10^{-17}$ to $1.2 \times 10^{-17}$) when excess water is added to pure NH$_3$ and therefore, we may use the same absorption strength throughout our discussion to give a brief concept on what is the column density of the species and how is the absorption area changes when concentrations of ice mixtures and photon energy are changed. For the case of CN$^-$, we know that CN$^-$ has a bond order =3 by its molecular orbitals which is different from CN stretching (bond order 2.5) which is very sensitive to the matrix environment. As an example, by Borget et al. \cite{borget2012aminoacetonitrile}, the CN stretch in amino acetonitrile change by factor of 2 between the pure molecule itself and in a mixture of amino acetonitrile and H$_2$O (1:3). Here, we adopt the absorption strengths stated in Table \ref{tab:Absorbance} and neglect the error in absorption strengths.\\
 
 \begin{table}[htbp]
 \caption{The strength of absorbance adopted in this thesis measured in literatures of pure ice samples}
@@ -69,7 +69,7 @@ Wavenumber (cm$^{-1}$) & Assignment  & Vibration & FWHM & A value ($\times 10^{-
 1070 & NH$_3$ & "umbrella mode" & 68 & 1.7 & 1 \\
 \hline
 \end{tabular}
-Reference: 1. d'Hendecourt and Allamandola (1986) 2. Moore and Hudson (1998) 3. Noble et al. (2013)
+Reference: 1. d'Hendecourt and Allamandola (1986)\cite{d1986time} 2. Moore and Hudson (1998)\cite{moore1998infrared} 3. Noble et al. (2013) \cite{noble2012thermal}
 \end{table}
 
 \section{Reaction mechanisms}
@@ -83,7 +83,7 @@ Reference: 1. d'Hendecourt and Allamandola (1986) 2. Moore and Hudson (1998) 3. 
 \label{fig:C2H6}
 \end{figure}
 
-The assignment of C$_2$H$_6$ is confirmed by several bands listed in table \ref{tab:WavenumberMDHL}. Figure \ref{fig:C2H6} is a partial of figure \ref{fig:widerange}. The absorption peak located at 2075 cm$^{-1}$ is the strongest vibration of C$_2$H$_6$. The formation mechanism of C$_2$H$_6$ in astrophysical environment is proposed by Bennet et al. (2006), that the main route to form C$_2$H$_6$ is by a combination of 2 CH$_3$ radicals (equation \ref{eq:CH3} and \ref{eq:C2H6}):
+The assignment of C$_2$H$_6$ is confirmed by several bands listed in table \ref{tab:WavenumberMDHL}. Figure \ref{fig:C2H6} is a partial of figure \ref{fig:widerange}. The absorption peak located at 2075 cm$^{-1}$ is the strongest vibration of C$_2$H$_6$. The formation mechanism of C$_2$H$_6$ in astrophysical environment is proposed by Bennet et al. \cite{bennett2006laboratory}, that the main route to form C$_2$H$_6$ is by a combination of 2 CH$_3$ radicals (equation \ref{eq:CH3} and \ref{eq:C2H6}):
 
 \begin{equation}
 CH_4 + hv \rightarrow CH_3
@@ -94,7 +94,7 @@ CH_4 + hv \rightarrow CH_3
 \label{eq:C2H6}
 \end{equation}
 
-The energy required to produce 1 CH$_3$ radical from CH4 is 4.42 eV. 2 CH$_3$ radicals recombine to form C$_2$H$_6$ releases 3.74 eV. Therefore, equation \ref{eq:C2H6} is a no-barrier exothermic process. However, C$_2$H$_6$ is not detected in CH$_4$+NH$_3$=1:20 ice mixtures. Figure \ref{fig:lab_C2H6} shows the temporal formation column density of C$_2$H$_6$ in different configurations of irradiated ice mixtures.  As the formation only depends on CH$_4$, we may use first order kinetics equation to fit the column density versus photon dose.
+The energy required to produce 1 CH$_3$ radical from CH$_4$ is 4.42 eV. 2 CH$_3$ radicals recombine to form C$_2$H$_6$ releases 3.74 eV. Therefore, equation \ref{eq:C2H6} is a no-barrier exothermic process. However, C$_2$H$_6$ is not detected in CH$_4$+NH$_3$=1:20 ice mixtures. Figure \ref{fig:lab_C2H6} shows the temporal formation column density of C$_2$H$_6$ in different configurations of irradiated ice mixtures.  As the formation only depends on CH$_4$, we may use first order kinetics equation to fit the column density versus photon dose.
 \begin{equation}
 [A] = [A]_0(1 - e^{-k_1 t})
 \label{eq:1step}
