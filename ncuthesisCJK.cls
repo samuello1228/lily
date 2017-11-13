@@ -130,7 +130,7 @@ The paper width is  &\printlength{\paperwidth}
 \vspace*{30mm}
 {\Huge {\@dept} \par}
 \vspace*{2ex}
-{\Huge {\@degree}論文\par}	
+{\Huge {\@degree} thesis\par}
 \vspace*{20mm}
 {\Huge {\@title} \par}
 \vspace*{5mm}
