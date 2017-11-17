@@ -1,8 +1,9 @@
 \chapter{\protect Methods}
+\label{methods}
 
 \section{Laboratory Astrophysics}
 To study the chemical reactivity in astrophysical environment experimentally,
-we conducted our experiments in Interstellar photoprocessing system (IPS) (Chen et al. 2014),
+we conducted our experiments in Interstellar photoprocessing system (IPS) \cite{chen2013vacuum},
 an ultrahigh vacuum chamber with base pressure $3 \times 10^{-10}$ torr and 14 K,
 corresponds to a density of $10^6$ cm$^{-3}$, similar to dense cloud interiors.
 The system will be introduced in detail in section \ref{sec:IPS_system}.
@@ -10,13 +11,12 @@ To simulate the irradiation in interstellar environments,
 we use a micro-wave discharge hydrogen lamp (MDHL) and monochromatic extreme-ultraviolet irradiation (EUV) 30.4 nm to irradiate our ice mixtures,
 and they will be introduced in section \ref{sec:Vacuum_UV_source} and \ref{sec:Extreme_EUV_source} respectively.
 The experimental protocols will be elaborated in section \ref{sec:Experimental_Protocol}.
-In order to better understand the physics behind, some basic theories of Infrared spectroscopy and concepts of chemical kinetics used in data analysis are included in section \ref{sec:spectroscopy} and \ref{sec:Reaction_Rate_Laws} respectively.
-To demonstrate the ice mixtures in KBOs, we used different configurations of ice mixtures that refers to different sections in chapter 3 and chapter 4.\\
+In order to better understand the physics behind, some basic theories of Infrared spectroscopy and concepts of chemical kinetics used in data analysis are included in section \ref{sec:spectroscopy} and \ref{sec:Reaction_Rate_Laws} respectively.\\
 
 \subsection{Experimental simulations by IPS system}
 \label{sec:IPS_system}
 
-We conducted our astrophysical simulations studied in chapter 3 to 4 in Interstellar Photo Processing System (IPS) (figure \ref{fig:system}). IPS consists in three systems: the main chamber, where our experiments take places; the detection system, where we collect our data; and a gasline system, where we prepare our samples.
+We conducted our astrophysical simulations in Interstellar Photo Processing System (IPS) (figure \ref{fig:system}). IPS consists in three systems: the main chamber, where our experiments take places; the detection system, where we collect our data; and a gasline system, where we prepare our samples.
 
 \begin{figure}
 \centering
@@ -25,7 +25,7 @@ We conducted our astrophysical simulations studied in chapter 3 to 4 in Interste
 \label{fig:system}
 \end{figure}
 
-The main system consists of an ultrahigh vacuum chamber equipped with a closed-cycle helium cryostat (CTI-M350). It is pumped by a turbo molecular pump (KTKT FF – 160/620ZE, capacity 600 liters s$^{-1}$), which is backed up by a scroll pump, and a non –evaporation getter pump. The getter pump is a powerful tool to adsorb residue gases inside the main chamber, with a larger surface area, H$_2$, CO and N$_2$ are adsorbed to obtain a better base pressure. After baking, the base pressure of our main chamber can reach $1 \times 10^{-10}$ torr at 14 K, monitored by a Granville-Phillips 370 Stabil-Ion gauge. This pressure can be used to demonstrate the dense cloud interior environments and star forming region. The substrate we have chosen is KBr, which can allow infra-red photons with 700 to 4000 $cm^{-1}$ to penetrate. It is mounted by substrate holder made of oxygen-free copper, on the first stage of cold finger mounted on the tip of cryostat. Two silicon diodes and also a heater were placed onto the cold finger and one of the silicon diodes is near the substrate holder. They were connected to a temperature controller and PID system to achieve a warmup rate of 1K/min with an accuracy of 0.1 K.
+The main system consists of an ultrahigh vacuum chamber equipped with a closed-cycle helium cryostat (CTI-M350). It is pumped by a turbo molecular pump (KTKT FF – 160/620ZE, capacity 600 liters s$^{-1}$), which is backed up by a scroll pump, and a non –evaporation getter pump. The getter pump is a powerful tool to adsorb residue gases inside the main chamber, with a larger surface area, H$_2$, CO and N$_2$ are adsorbed to obtain a better base pressure. After baking, the base pressure of our main chamber can reach $1 \times 10^{-10}$ torr at 14 K, monitored by a Granville-Phillips 370 Stabil-Ion gauge. This pressure can be used to demonstrate the dense cloud interior environments and star forming region. The substrate we have chosen is KBr, which can allow infra-red photons with 700 to 4000 $cm^{-1}$ to penetrate. It is mounted by substrate holder made of oxygen-free copper, on the second stage of cold finger mounted on the tip of cryostat. Two silicon diodes and also a heater were placed onto the cold finger and one of the silicon diodes is near the substrate holder. They were connected to a temperature controller and PID system to achieve a warmup rate of 1K/min with an accuracy of 0.1 K.
 
 The detection system consists in a mid-infrared Fourier transform spectrometer (mid-FTIR) (ABB FTLA2000-104) and a Quadrupole Mass Spectrometer (QMS). To prevent absorption bands of CO, CO$_2$ and H$_2$O gas in the atmosphere, the IR beam path was built inside vacuum, pumped by dry pump. The main chamber and the IR path are separated by ZnSe windows, which can allow infra-red penetration from 0.5 – 20 um with absorption less than 0.07 \%. In this study, the infrared spectra are obtained with resolution of 4 cm$^{-1}$ and averaged over 32 scans. The angle between the IR beam path and the substrate holder is 45 degrees. The QMS (MKS Microvision 2) consists of a controller and mechanical part sealed by a mounting flange in ultrahigh vacuum. It is mounted 10 cm from the substrate and run with a resolution 0.5 a.m.u. The Ionizer release 70 eV electron by filament and ionize incoming molecules to positive charged ions between anode grid and repeller. The ions were accelerated by focus plate and enters ion filter, which consists of four circular rods, with a combination of A.C and D.C. potential to sieve whole bandpass ions at millisecond timescale. The selected ions enter ion detector and are detected by either faraday cup and continuous dynode electron multiplier (CDEM) which can secondary multiply weak signals.
 
@@ -53,7 +53,7 @@ It consists in Ly-α (121.6nm) and H$_2$ molecular emission in 110-180 nm range.
 \subsection{Extreme EUV source}
 \label{sec:Extreme_EUV_source}
 
-To simulate the solar EUV irradiation reflected by IPM on both Charon and interstellar ices, we use the HF-CGM high – flux beam line of the National Synchrotron Radiation Research Center in Hsinchu, Taiwan. It provides a continuum EUV to VUV photons from 4 to 40 eV. The continuum is separated into monochromatic He II line (30.4nm) with a six-meter cylindrical grating monochrometer with an incident angle of 70 degrees. With the help of a movable entrance slit and movable curved exit slit, the energy resolving power can reach around $3 \times 10^4$ at 40 eV for grating 1600 l/mm with both slits movable and set opening to 10 $\mu m$ (Hsieh 1998). Similar to VUV irradiation provided by MDHL, the light intensity was monitored by the same nickel mesh with photoelectric efficiency obtained by SXUV 100 photodiode calibrated by NIST. With the known photoelectric efficiency, the flux of monochromatic 30.4nm is measured to be $2.15 \times 10^{14}$ photons $s^{-1} cm^{-2}$ with a spot size of 1 cm%^2% which is in the same order of magnitude of VUV continuum of MDHL. We replace the port with MDHL by the end station of the high-flux beamline. To prevent contaminations in the pipes and bellows, we placed a cryostat backed up by a scroll pump between our system and the beamline endstation. Between the cryostat and our main chamber is a SiO$_2$ valve, which is closed to prevent contamination to the end station during the warm-up phase.
+To simulate the solar EUV irradiation reflected by IPM on both Charon and interstellar ices, we use the HF-CGM high – flux beam line of the National Synchrotron Radiation Research Center in Hsinchu, Taiwan. It provides a continuum EUV to VUV photons from 4 to 40 eV. The continuum is separated into monochromatic 30.4nm photons with a six-meter cylindrical grating monochrometer with an incident angle of 70 degrees. With the help of a movable entrance slit and movable curved exit slit, the energy resolving power can reach around $3 \times 10^4$ at 40 eV for grating 1600 l/mm with both slits movable and set opening to 10 $\mu m$ \cite{hsieh1998design}. Similar to VUV irradiation provided by MDHL, the light intensity was monitored by the same nickel mesh with photoelectric efficiency obtained by SXUV 100 photodiode calibrated by NIST. With the known photoelectric efficiency, the flux of monochromatic 30.4nm is measured to be $2.15 \times 10^{14}$ photons $s^{-1} cm^{-2}$ with a spot size of 1 cm%^2% which is in the same order of magnitude of VUV continuum of MDHL. We replace the port with MDHL by the end station of the high-flux beamline. To prevent contaminations in the pipes and bellows, we placed a cryostat backed up by a scroll pump between our system and the beamline endstation. Between the cryostat and our main chamber is a SiO$_2$ valve, which is closed to prevent contamination to the end station during the warm-up phase.
 
 \section{Experimental Protocol}
 \label{sec:Experimental_Protocol}
@@ -106,21 +106,19 @@ where $N$ is the column density (molecule cm$^{-2}$), $A(\nu)$ is the absorbance
 \label{sec:Reaction_Rate_Laws}
 In this section, we will introduce rate reaction of a consecutive reaction and the concept of pseudo first order which we used to fit our reaction product against irradiation time. The rate of a chemical reaction is the relation between change in concentration of a substance per unit of time. i.e. For a balanced chemical reaction, A $\rightarrow$ 2B, the rate of reaction is $- \frac{\Delta [A]}{\Delta t}$. The formation rate of B is 2 times destruction rate of A.
 
-When there are two reactants, with balanced equation 2A + B $\rightarrow$ 2C. The reaction is a third order overall, second order in A and first order in B. rate $ = k [A]^2 [B]$.
 
-To determine the order of a reaction, we can only determine it experimentally. One way is method of initial rates. By changing concentration of initial reactants, and find out the initial reaction rate, we may find out the relation between two reactants and the rate. i.e. rate $ = k [A]^x [B]^y $.
-For a reaction with only one reactant $[R]$, we may use the relation between time and reactant concentration to plot graphs to find out the order or reaction.
+To determine the order of a reaction, we can only determine it experimentally.
 For a zero order reaction, the rate is not depending on any reactant that it is a constant. The rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]^0$. By calculus, $[R]_0 - [R]_t = kt$.
 
 For a first order reaction, rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]$. By calculus, $\ln [R]_t = -kt + \ln [R]_0$.
 
 For a second order reaction, rate $ = - \frac{\Delta [R]}{\Delta t} = k[R]^2$. By calculus, $\frac{1}{[R]_t} - \frac{1}{[R]_0} = kt$.
 
-Hence, if we get a straight line in a plot between time as x-axis, and the concentration of reactant as y axis, it is a zeroth order reaction, similarly, in first order reactions, we get straight line in plots between $\ln [R]$ as y axis and t in x axis.
+Hence, if we get a straight line in a time versus concentration plot ,it is a zeroth order reaction, similarly, in first order reactions, we get proportional relationships in time versus $\ln [R]$.
 
 In a reaction with one reactant in excess, the rate of reaction is called pseudo first order reaction where pseudo means pretended. For A+B $\rightarrow$ C, rate $ = k[A][B]$. As $[B]_0 \gg [A]_0$, change of $[B]$ is negligible that $[B] \sim [B]_0$. Therefore, $[B]$ is assumed to be a constant and included in the rate constant k.
 
-For a consecutive reaction, where A $\rightarrow$ B $\rightarrow$ C that the produced product will not convert back as reactant. A simple example is radioactive decay. At $t=0$, $[A]=[A]_0$, $[B]=0$, $[C]=0$ and at all times, $[A]+[B]+[C]=[A]_0$. The rate equations are as follows:
+For a consecutive reaction equation, which we used to fit our data points, where A $\rightarrow$ B $\rightarrow$ C that the produced product will not convert back as reactant. A simple example is radioactive decay. At $t=0$, $[A]=[A]_0$, $[B]=0$, $[C]=0$ and at all times, $[A]+[B]+[C]=[A]_0$. The rate equations are as follows:
 \begin{equation}
 - \frac{\Delta [A]}{\Delta t} = k_1 [A]
 \label{eq:rate1}
