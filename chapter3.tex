@@ -107,7 +107,7 @@ The fitting results are shown in table \ref{tab:fittingC2H6}. From table \ref{ta
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/chapter3/Lab_C2H6.eps}
-\caption{The column density of C2H6 during CH4 + NH3 ice mixtures irradiated by MDHL. }
+\caption{The column density of C$_2$H$_6$ during CH4 + NH3 ice mixtures irradiated by MDHL. }
 \label{fig:lab_C2H6}
 \end{figure}
 
@@ -138,6 +138,30 @@ C_2H_6 + CH_2 \rightarrow C_3H_8
 C_2H_4 + CH_4 \rightarrow C_3H_8
 \label{eq:C3H82}
 \end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/chapter3/VUV_C3H8.png}
+\caption{The column density of C$_3$H$_8$ during CH4 + NH3 ice mixtures irradiated by MDHL. }
+\label{fig:lab_C3H8}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{The fitting results of C$_3$H$_8$ by [C$_3$H$_8$]=[C$_3$H$_8$]$(1 - e^{-k_1 t})$}
+\label{tab:fittingC3H8}
+\begin{tabular}{ccc}
+\hline
+\hline
+Ratio of CH$_4$+NH$_3$ & A (x10$^{15}$ molecules cm$^{-2}$) & k (x10$^{-17}$ photon$^{-1}$) \\
+\hline
+1:5 & 0.46 $\pm$ 0.17 & 2.89 $\pm$ 2.44 \\
+3:2 & 3.84 $\pm$ 0.18 & 2.08 $\pm$ 0.18 \\
+\hline
+\end{tabular}
+\end{table}
+
+The column densities are shown in figure \ref{fig:lab_C3H8}, where the fitting results are shown in table \ref{tab:fittingC3H8}. Since the C$_3$H$_8$ detection in CH$_4$ + NH$_3$ = 1:5 ice mixtures are close to our detection limits, the errors of the fitting results would attributes to a meaningless fitting.
+
 
 \subsection{CN$^-$}
 
@@ -205,9 +229,24 @@ A represents the amount of CN$^-$ we may obtain when irradiated the ice for infi
 
 \subsection{Cyanide ion}
 
-From table \ref{tab:CNrate}, we may observe that the rate k$_1$ is nearly proportional to the concentration of CH$_4$.  As CH$_4$ to NH$_3$ ratio increases, more CH$_4$ are involved in CH$_3$ radical formation, thus there are more CH$_3$ radicals to produce CH$_3$NH$_2$ intermediates.\\
+From table \ref{tab:CNrate}, we may observe that the rate k$_1$ is nearly proportional to the concentration of CH$_4$.  As CH$_4$ to NH$_3$ ratio increases in ammonia dominated ices, more CH$_4$ are involved in CH$_3$ radical formation, thus there are more CH$_3$ radicals to produce CH$_3$NH$_2$ intermediates(figure \ref{fig:NH3_dominated}).\\
 
-In CH$_4$ to NH$_3$ =3:2 ice mixtures, the cyanide ion formed is about half of that of the other ratios. The reduction is mainly because NH$_2$ (forming CH$_3$NH$_2$) has a competing relationship with CH$_2$, CH$_3$ and C$_2$H$_4$ radicals (forming C$_2$H$_6$ and C$_3$H$_8$). This competition supresses the production of intermediate CH$_3$NH$_2$, thus the formation of CN$^-$. Therefore, the yield of CN$^-$ is the least in CH$_4$ to NH$_3$ ice mixture with ratio 3:2 while the yield of C$_2$H$_6$ is the greatest in the mixture with the same ratio(table \ref{tab:CNrate}), (table \ref{tab:fittingC2H6})\\
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/ammonia_dominated.png}
+\caption{The NH$_3$ in excess situation where increasing CH$_4$ concentrations enhances the production of CN$^-$.}
+\label{fig:NH3_dominated}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/methane_dominate.png}
+\caption{The CH$_4$ in excess situation where CH$_4$ reacts with neighbouring CH$_4$ molecules producing C$_2$H$_6$ and C$_3$H$_8$.}
+\label{fig:CH4_dominated}
+\end{figure}
+
+In CH$_4$ to NH$_3$ =3:2 ice mixtures, the cyanide ion formed is about half of that of the other ratios. The reduction is mainly because NH$_2$ (forming CH$_3$NH$_2$) has a competing relationship with CH$_2$, CH$_3$ and C$_2$H$_4$ radicals (forming C$_2$H$_6$ and C$_3$H$_8$). This competition supresses the production of intermediate CH$_3$NH$_2$, thus the formation of CN$^-$ (figure \ref{fig:CH4_dominated}). Therefore, the yield of CN$^-$ is the least in CH$_4$ to NH$_3$ ice mixture with ratio 3:2 while the yield of C$_2$H$_6$ is the greatest in the mixture with the same ratio(table \ref{tab:CNrate}), (table \ref{tab:fittingC2H6})\\
 
 Considering the normalized CN$^-$ with respect to the initial CH$_4$(figure \ref{fig:CN_CH4}), the formation of CN$^-$ is more efficient in low CH$_4$ concentration ice mixtures. At low CH$_4$ concentration, there are excess NH$_3$ which can aggregate mobile CH$_3$ radicals, preventing meeting another CH$_3$ radical or C$_2$H$_4$. Therefore the production of C$_2$H$_6$ is greatly suppressed and more CN$^-$ will be produced.\\
 
