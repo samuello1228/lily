@@ -166,12 +166,29 @@ The column densities are shown in figure \ref{fig:lab_C3H8}, where the fitting r
 
 \subsection{CN$^-$}
 
+%\begin{figure}
+%\centering
+%\includegraphics[width=\textwidth]{figures/chapter3/CNmechanism}
+%\caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011)\cite{kim} .}
+%\label{fig:CNmechanism}
+%\end{figure}
+
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{figures/chapter3/CNmechanism}
+\begin{tikzcd}
+CH_4+NH_3
+\arrow[drr, bend left, "k_1"]
+\arrow[ddr, bend right, "k"']
+\arrow[dr, dotted, "{h\nu}", "-2H"'] & & \\
+& CH_3+NH_2 \arrow[r]
+& CH_3NH_2 \arrow[d, "-H_2/2H"] \arrow[dl,"k_2"']\\
+& CN^-
+& CH_2NH \arrow[ l, "+Ba" near end, "-HBa^+" near start , "-H_2/2H"']
+\end{tikzcd}
 \caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011)\cite{kim} .}
 \label{fig:CNmechanism}
 \end{figure}
+
 
 The formation mechanism of CN$^-$ at low temperature was suggested by Kim and Kaiser (2011) to be two step reaction mechanism with methylamine as intermediate\cite{kim}. CH$_4$ and NH$_3$ irradiated by photon become CH$_3$ and NH$_2$ radicals (figure \ref{fig:CNmechanism}), followed by propagation and recombination of radicals becoming CH$_3$NH$_2$ and dehydrogenation and acid-base reaction to form CN$^-$. \\
 
