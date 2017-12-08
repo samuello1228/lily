@@ -3,13 +3,13 @@
 \begin{document}
 \begin{tikzcd}
 CH_4+NH_3
-\arrow[drr, bend left, "k_1"]
-\arrow[ddr, bend right, "k"']
+\arrow[drr, bend left, "k"]
+\arrow[ddr, bend right, "k_1"']
 \arrow[dr, dotted, "{h\nu}", "-2H"'] & & \\
-& CH_3+NH_2 \arrow[r] 
-& CH_3NH_2 \arrow[d, "-H_2/2H"] \arrow[dl,"k_2"']\\
-& CN^- 
-& CH_2NH \arrow[ l, "+Ba" near end, "-HBa^+" near start , "-H_2/2H"']
+& CH_3+NH_2 \arrow [d]
+& CN^-\\
+& CH_3NH_2 \arrow[ r, "-H_2/2H"'] \arrow[ur, bend left, "k_2"']
+& CH_2NH \arrow[u, "-H_2/2H", "+Ba"' near end, "-HBa^+"' near start] 
 \end{tikzcd}
 
 

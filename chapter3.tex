@@ -173,24 +173,23 @@ The column densities are shown in figure \ref{fig:lab_C3H8}, where the fitting r
 %\label{fig:CNmechanism}
 %\end{figure}
 
-\begin{figure}
-\centering
+
+
+The formation mechanism of CN$^-$ at low temperature was suggested by Kim and Kaiser (2011) to be two step reaction mechanism with methylamine as intermediate\cite{kim}. CH$_4$ and NH$_3$ irradiated by photon become CH$_3$ and NH$_2$ radicals, followed by propagation and recombination of radicals becoming CH$_3$NH$_2$ and dehydrogenation and acid-base reaction to form CN$^-$:
+
+\begin{equation}
 \begin{tikzcd}
 CH_4+NH_3
-\arrow[drr, bend left, "k_1"]
-\arrow[ddr, bend right, "k"']
+\arrow[drr, bend left, "k"]
+\arrow[ddr, bend right, "k_1"']
 \arrow[dr, dotted, "{h\nu}", "-2H"'] & & \\
-& CH_3+NH_2 \arrow[r]
-& CH_3NH_2 \arrow[d, "-H_2/2H"] \arrow[dl,"k_2"']\\
-& CN^-
-& CH_2NH \arrow[ l, "+Ba" near end, "-HBa^+" near start , "-H_2/2H"']
+& CH_3+NH_2 \arrow [d]
+& CN^-\\
+& CH_3NH_2 \arrow[ r, "-H_2/2H"'] \arrow[ur, bend left, "k_2"']
+& CH_2NH \arrow[u, "-H_2/2H", "+Ba"' near end, "-HBa^+"' near start]
 \end{tikzcd}
-\caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011)\cite{kim} .}
 \label{fig:CNmechanism}
-\end{figure}
-
-
-The formation mechanism of CN$^-$ at low temperature was suggested by Kim and Kaiser (2011) to be two step reaction mechanism with methylamine as intermediate\cite{kim}. CH$_4$ and NH$_3$ irradiated by photon become CH$_3$ and NH$_2$ radicals (figure \ref{fig:CNmechanism}), followed by propagation and recombination of radicals becoming CH$_3$NH$_2$ and dehydrogenation and acid-base reaction to form CN$^-$. \\
+\end{equation}
 
 Kim and Kaiser (2011) used 1.5 keV electron as energy source to simulate the cosmic ray induced photochemistry \cite{kim}. Despite the extra heats generated in these exothermal reactions:
 \begin{equation}
