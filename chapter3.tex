@@ -18,7 +18,7 @@ Figure \ref{fig:widerange} is a typical infrared spectrum of CH$_4$:NH$_3$ ice m
 \begin{tabular}{cccccc}
 \hline
 \hline
-Wavenumber (cm$^{-1}$) & Assignment  & Vibration & FWHM & A value ($\times 10^{-17}$) & Reference \\
+Wavenumber (cm$^{-1}$) & Assignment  & Vibration & FWHM & $A$ value ($\times 10^{-17}$) & Reference \\
 \hline
 2976 &  C$_2$H$_6$ & -CH$_3$ & - & 1.05 & 2 \\
 2960 & C$_3$H$_8$ & -CH$_2$- & - & 2.58 & 2 \\
@@ -46,11 +46,11 @@ The peak positioned at 2960 cm$^{-1}$ belongs to -CH$_2$- so we tentatively assi
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/chapter3/CN.png}
-\caption{The infrared spectrum of CH$_4$ + NH$_3$ ice mixtures of C$_2$H$_6$ and C$_3$H$_8$ before irradiation (black) and VUV irradiated ice mixtures provided by MDHL. }
+\caption{The infrared spectra of CH$_4$ + NH$_3$ ice mixtures in the range of CN$^-$ before irradiation (black) and VUV irradiated ice mixtures provided by MDHL. }
 \label{fig:CN}
 \end{figure}
 
-Figure \ref{fig:CN} is zoomed infrared absorption spectra of CN$^-$. We assign the peak 2086 cm$^{-1}$ to CN$^-$  but not a combination of HCN and CN$^-$. The assignment is based on a absence in CN bending mode at 848 cm$^{-1}$. In the case CH$_4$ + NH$_3$ = 3:2, we may observe a peak located at 820 cm$^{-1}$, the charateristic of the band is different from HCN (halved FWHM of HCN) and it is eliminated at 50 K during the warm-up phase. Since 50 K is the desorbing temperature of C$_2$H$_6$ and the peak position is close to $\nu$12 mode of C$_2$H$_6$, we believe that the 820 cm$^{-1}$ peak is contributed by C$_2$H$_6$. Therefore, we may assign our peak located at 2086 cm$^{-1}$ as purely CN$^-$. After identification of the main products (C$_2$H$_6$, CN$^-$ and C$_3$H$_8$), we will look into the mechanisms one by one in the next section.\\
+Figure \ref{fig:CN} is zoomed infrared absorption spectra of CN$^-$. We assign the peak 2086 cm$^{-1}$ to CN$^-$  but not a combination of HCN and CN$^-$. The assignment is based on a absence in CN bending mode at 848 cm$^{-1}$. In the case CH$_4$ + NH$_3$ = 3:2,a peak located at 820 cm$^{-1}$ is observed, the charateristic of the band is different from HCN (halved FWHM of HCN) and it is eliminated at 50 K during the warm-up phase. Since 50 K is the desorbing temperature of C$_2$H$_6$ and the peak position is close to $\nu$12 mode of C$_2$H$_6$, we believe that the 820 cm$^{-1}$ peak is contributed by C$_2$H$_6$. Therefore, peak located at 2086 cm$^{-1}$ is assigned as purely CN$^-$. After identification of the main products (C$_2$H$_6$, CN$^-$ and C$_3$H$_8$), we will look into the mechanisms one by one in the next section.\\
 
 \begin{table}[htbp]
 \caption{The peak positions of identified substances after irradiation in different relative proportions of ice mixtures.}
@@ -88,22 +88,22 @@ Reference: 1. Bossa et al. 2008 \cite{bossa2008carbamic} 2. Moore and Hudson 200
 \subsection{C$_2$H$_6$}
 The formation of C$_2$H$_6$ in astrophysical environment is mainly a combination with 2 CH$_3$ radicals \cite{bennett2006laboratory}:
 \begin{equation}
-CH_4 + hv \rightarrow CH_3
+\rm{CH_4} + h\nu \rightarrow CH_3
 \label{eq:CH3}
 \end{equation}
 \begin{equation}
-2 CH_3 \rightarrow C_2H_6
+2 \rm{CH_3} \rightarrow C_2H_6
 \label{eq:C2H6}
 \end{equation}
 
-The energy requires to break the CH bond of CH$_4$ is 4.42 eV. The recombination of 2 CH$_3$ radicals forms a internal excited C$_2$H$_6$, and releases 3.74 eV to the surrounding matrixs or proceeds further to become ethly radicals (C$_2$H$_5$) or ethene (C$_2$H$_4$) (required extra of 0.53 and 0.84 eV respectively. \cite{bennett2006laboratory}. Therefore, the process in equation \ref{eq:C2H6} is a no-barrier exothermic process. The formed C$_2$H$_6$ is internally excited that it is able to become C$_2$H$_4$ etc. Figure \ref{fig:lab_C2H6} depicts the formation column density as a function of irradiation time of C$_2$H$_6$ in different relative proportions of irradiated ice mixtures.  As the formation only depends on CH$_4$, we may use first order kinetics equation to fit the column density versus photon dose.\\
+The energy requires to break the CH bond of CH$_4$ is 4.43 eV\cite{bennett2006laboratory}. From Bennet et al. (2006)\cite{bennett2006laboratory},the recombination of 2 CH$_3$ radicals forms a internal excited C$_2$H$_6$, and releases 3.74 eV to the surrounding matrixs or decompose unimolecularly to become ethly radicals (C$_2$H$_5$) or ethene (C$_2$H$_4$) (required extra of 0.53\cite{bennett2006laboratory} and 0.84 eV\cite{irle2000molecular} respectively). Therefore, the process in equation \ref{eq:C2H6} is a no-barrier exothermic process. The formed C$_2$H$_6$ is internally excited that it is able to become C$_2$H$_4$ etc. Figure \ref{fig:lab_C2H6} depicts the formation column density as a function of irradiation time of C$_2$H$_6$ in different relative proportions of irradiated ice mixtures.  As the formation only depends on CH$_4$, first order kinetics equation is adopted to fit the column density versus photon dose.\\
 
 \begin{equation}
-[C_2H_6] = [C_2H_6]_0(1 - e^{-kt})
+[\rm{C_2H_6}] = B(1 - e^{-kt})
 \label{eq:1step}
 \end{equation}
 
-The fitting results are shown in table \ref{tab:fittingC2H6}. From table \ref{tab:fittingC2H6}, the production rate is nearly proportional to the initial CH$_4$ concentrations.  Note that C$_2$H$_6$ is not detected in CH$_4$ to NH$_3$ = 1:20 ice mixtures.\\
+Where B is the column density of C$_2$H$_6$ achieved when irradiated for infinitly long. The fitting results are shown in table \ref{tab:fittingC2H6}. From table \ref{tab:fittingC2H6}, the production rate is nearly proportional to the initial CH$_4$ concentrations.  Note that C$_2$H$_6$ is not detected in CH$_4$ to NH$_3$ = 1:20 ice mixtures.\\
 
 \begin{figure}
 \centering
@@ -113,7 +113,7 @@ The fitting results are shown in table \ref{tab:fittingC2H6}. From table \ref{ta
 \end{figure}
 
 \begin{table}[htbp]
-\caption{The fitting results of C$_2$H$_6$ by [C$_2$H$_6$]=[C$_2$H$_6$]$_o(1 - e^{-kt})$}
+\caption{The fitting results of C$_2$H$_6$ by [C$_2$H$_6$]=$B$(1 - e$^{-kt}$)}
 \label{tab:fittingC2H6}
 \begin{tabular}{ccc}
 \hline
@@ -148,7 +148,7 @@ C_2H_4 + CH_4 \rightarrow C_3H_8
 \end{figure}
 
 \begin{table}[htbp]
-\caption{The fitting results of C$_3$H$_8$ by [C$_3$H$_8$]=[C$_3$H$_8$]$(1 - e^{-k_1 t})$}
+\caption{The fitting results of C$_3$H$_8$ by [C$_3$H$_8$]=$C(1 - e^{-k_1 t})$}
 \label{tab:fittingC3H8}
 \begin{tabular}{ccc}
 \hline
@@ -158,8 +158,8 @@ Ratio of CH$_4$:NH$_3$ & A (x10$^{15}$ molecules cm$^{-2}$) & k (x10$^{-17}$ pho
 1:5 & 0.46 $\pm$ 0.17 & 2.89 $\pm$ 2.44 \\
 3:2 & 3.84 $\pm$ 0.18 & 2.08 $\pm$ 0.18 \\
 \hline
-\end{tabular}
-Note that this peak (2960 cm$^{-1}$) is only tentative assignment which consists of mainly C$_3$H$_8$, other species such as C$_2$H$_6$ and carbon chains with -CH$_2$- also contributes to the peak.
+\end{tabular}\\
+Note that this peak (2960 cm$^{-1}$) is only tentative assignment which consists of mainly C$_3$H$_8$, other species such as C$_2$H$_6$ and carbon chains with -CH$_2$- also contributes to the peak. $C$ is similar to $B$ that it is the column density of C$_3$H$_8$ after infinitly long irradiation time.
 \end{table}
 
 The column densities are shown in figure \ref{fig:lab_C3H8}, where the fitting results are shown in table \ref{tab:fittingC3H8}. Since the C$_3$H$_8$ detection in CH$_4$ + NH$_3$ = 1:5 ice mixtures are close to our detection limits, the errors of the fitting results would attributes to a meaningless fitting.
@@ -169,7 +169,7 @@ The column densities are shown in figure \ref{fig:lab_C3H8}, where the fitting r
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/chapter3/CNmechanism}
-\caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011)\cite{kim}, we denote the one step mechanism with rate constant k, and two step pathway by k$_1$ and k$_2$; k equals k$_1$ when k$_2$ >>k$_1$.}
+\caption{The formation mechanism of CN$^-$ proposed by Kim and Kaiser(2011)\cite{kim}, we denote the one step mechanism with rate constant k, and two step pathway by k$_1$ and k$_2$;the value of k equals k$_1$ when k$_2$ >> k$_1$.}
 \label{fig:CNmechanism}
 \end{figure}
 
@@ -190,7 +190,7 @@ The formation mechanism of CN$^-$ at low temperature was suggested by Kim and Ka
 %\label{fig:CNmechanism}
 %\end{figure}
 
-Kim and Kaiser (2011) used 1.5 keV electron as energy source to simulate the cosmic ray induced photochemistry \cite{kim}. Despite the extra heats generated in these exothermal reactions:
+Kim and Kaiser (2011) used 1.5 keV electron as energy source to simulate the cosmic ray induced photochemistry \cite{kim}. Despite the extra heats generated in these exothermal reactions(calculated by Kundu et al.(2017)\cite{kundu2017electron}):
 \begin{equation}
 CH_2 + NH_3 \rightarrow CH_3NH_2, \Delta H = -3.7 eV
 \label{eq:methylamine_1}
@@ -203,7 +203,7 @@ CH_4 + NH \rightarrow CH_3NH_2, \Delta H = -3.14 eV
 CH_3 + NH_2 \rightarrow CH_3NH_2, \Delta H = -3.64 eV
 \label{eq:methylamine_3}
 \end{equation}
-Kundu et al. (2017) fails to observe methylamine as intermediate during warmup phase after using 1$-$90 eV electrons to initiate CH$_4$ and NH$_3$ ice mixtures\cite{kundu2017electron}. The non-detection is probably due to their thin ice thicknesses (just a few monolayers). This formation mechanism also applies in our photon irradiation experiments because we can also detect the methylamine during our warm-up phase. The ion fragment with m/z=31 is assigned as CH$_3$NH$_2$$^+$ and detectable in all ratios of our CH$_4$ + NH$_3$ experiments (figure \ref{Mass31}).\\
+Kundu et al. (2017) \cite{kundu2017electron} fails to observe methylamine as intermediate during warmup phase after using 1$-$90 eV electrons to initiate CH$_4$ and NH$_3$ ice mixtures. They explained that the non-detection is due to their thin ice thicknesses (6-7 ML and 3-4 ML for CH$_4$ and NH$_3$ respectively). The low energy dose (13 eV/molecule) and fast heating rate (60 K/s) are also reasons for the non-detection. This formation mechanism also applies in our photon irradiation experiments because we can also detect the methylamine during our warm-up phase. The ion fragment with m/z=31 is assigned as CH$_3$NH$_2$$^+$ and detectable in all ratios of our CH$_4$ + NH$_3$ experiments (figure \ref{Mass31}).\\
 
 \begin{figure}
 \centering
@@ -212,7 +212,7 @@ Kundu et al. (2017) fails to observe methylamine as intermediate during warmup p
 \label{Mass31}
 \end{figure}
 
-Mentioned in section \ref{sec:Reaction_Rate_Laws}, we use rate equation for consecutive reactions \ref{eq:rate7} to fit our CN$^-$ column densities. This rate equation applies in our experiments with one of the reactants in excess. Since CH$_4$ is more abundant than NH$_3$ (CH$_4$:NH$_3$=3:2); or NH$_3$ is in excess (CH$_4$:NH$_3$ = 1:5, 1:10 and 1:20) we may apply the pseudo first order assumption. Throughout the formation mechanism, one of the reactant (niether C or N) is a limiting reatant, therefore, we may apply the rate equation \ref{eq:rate7} to fit the formation of CN$^-$ (figure \ref{fig:CNrate}).\\
+Mentioned in section \ref{sec:Reaction_Rate_Laws}, we use rate equation for consecutive reactions \ref{eq:rate7} to fit our CN$^-$ column densities. This rate equation applies in our experiments with one of the reactants in excess. Although CH$_4$ is more abundant than NH$_3$ (CH$_4$:NH$_3$=3:2), their comparable concentrations still tends to a second order kinetics. Contrastly, NH$_3$ is in excess (CH$_4$:NH$_3$ = 1:5, 1:10 and 1:20), the pseudo first order assumption is applied. Throughout the formation mechanism, one of the reactants (niether C or N) is a limiting reatant, therefore, the rate equation \ref{eq:rate7} is adopted to fit the formation of CN$^-$ (figure \ref{fig:CNrate}).\\
 
 The fitting results are averaged by more than two experiments and are shown in table \ref{tab:CNrate}. We find that one of the rate constant is always larger than the other in all of the ratios. The results of Kim and Kaiser (2011) is also listed into the table, they could observe a two-step reaction mechanism in production of CN$^-$ in CH$_4$:NH$_3$ =3:1 experiments with electron current 0.1 $\mu$A. However, when they increase the electron flux to 1 $\mu$A for irradiating C$_n$H$_{2n+2}$ (n=1-6) and NH$_3$ ice mixtures, they observed a one-step reaction mechanism \cite{kim}.\\
 
@@ -232,10 +232,10 @@ The fitting results are averaged by more than two experiments and are shown in t
 \multicolumn{4}{c}{VUV experiments with CH$_4$:NH$_3$ ice mixtures}\\
 Ratio & A (x10$^{16}$ molecules cm$^{-2}$) & k$_1$ (x10$^{-18}$ photon$^{-1}$) & k$_2$ (photon$^{-1}$)\\
 \hline
-1:20 & 4.75 $\pm$ 0.40 & 0.70 $\pm$ 0.09 & >1 \\
-1:10 & 4.51 $\pm$ 0.18 & 1.33 $\pm$ 0.13 & >1 \\
-1:5 & 4.61 $\pm$ 0.18 & 1.93 $\pm$ 0.19 & >1 \\
-3:2 & 2.24 $\pm$ 0.03 & 8.21 $\pm$ 0.70 & >1 \\
+1:20 & 4.75 $\pm$ 0.40 & 0.70 $\pm$ 0.09 & >>1 \\
+1:10 & 4.51 $\pm$ 0.18 & 1.33 $\pm$ 0.13 & >>1 \\
+1:5 & 4.61 $\pm$ 0.18 & 1.93 $\pm$ 0.19 & >>1 \\
+3:2 & 2.24 $\pm$ 0.03 & 8.21 $\pm$ 0.70 & >>1 \\
 \hline
 \hline
 \multicolumn{4}{c}{Quoted from Kim and Kaiser\cite{kim}} \\
@@ -248,7 +248,7 @@ Ratio & [CN$^-$](x10$^{16}$ molecules cm$^{-2}$) & $k_1$ ($\times$ 10$^{-3}$ s$^
 2:5 & 1.0 $\pm$ 0.0 & 8.7 $\pm$ 1.3 & >>1 \\
 \hline
 \end{tabular}\\
-The second column represents the column density of CN$^-$ we may obtain when irradiated the ice for infinitely long.\
+The second column represents the column density of CN$^-$ obtained when irradiated the ice for infinitely long.\
 \end{table}
 
 \section{The Concentration Effects in CN$^-$formation and the relation with C$_2$H$_6$ and C$_3$H$_8$}
@@ -257,7 +257,7 @@ The second column represents the column density of CN$^-$ we may obtain when irr
 
 \subsection{Cyanide ion and Ethane}
 
-From table \ref{tab:CNrate}, we may observe that the rate k$_1$ is nearly proportional to the concentration of CH$_4$.  As CH$_4$ to NH$_3$ ratio increases in ammonia dominated ices, more CH$_4$ are involved in CH$_3$ radical formation, thus there are more CH$_3$ radicals to produce CH$_3$NH$_2$ intermediates(figure \ref{fig:NH3_dominated}).\\
+From table \ref{tab:CNrate}, the rate k$_1$ is nearly proportional to the concentration of CH$_4$.  As CH$_4$ to NH$_3$ ratio increases in ammonia dominated ices, more CH$_4$ are involved in CH$_3$ radical formation, thus there are more CH$_3$ radicals to produce CH$_3$NH$_2$ intermediates(figure \ref{fig:NH3_dominated}).\\
 
 \begin{figure}
 \centering
@@ -274,7 +274,9 @@ From table \ref{tab:CNrate}, we may observe that the rate k$_1$ is nearly propor
 \label{fig:CH4_dominated}
 \end{figure}
 
-In CH$_4$ to NH$_3$ =3:2 ice mixtures, however, the cyanide ion formed is about half of that of the other ratios. The decrease is mainly because NH$_2$ (forming CH$_3$NH$_2$) has a competing relationship with CH$_2$, CH$_3$ and C$_2$H$_4$ radicals (forming C$_2$H$_6$ and C$_3$H$_8$). This competition supresses the production of intermediate CH$_3$NH$_2$, thus the formation of CN$^-$ (figure \ref{fig:CH4_dominated}). Therefore, the yield of CN$^-$ is the least in CH$_4$ to NH$_3$ ice mixture with ratio 3:2 while the yield of C$_2$H$_6$ is the greatest in the mixture with the same ratio(table \ref{tab:CNrate} and \ref{tab:fittingC2H6}). Figure of CN$^-$ and C$_2$H$_6$ (figure \ref{fig:C2H6_CN_comparison}) shows the formation of CN$^-$ in ice mixtures with diluted CH$_4$ has more CN$^-$ formed than C$_2$H$_6$. It is because ice mixtures with with higher concentrations in CH$_4$ is more effective for one CH$_3$ radical to combine with another CH$_3$ radical. In contrast, CH$_3$ radicals formed in the ice mixtures with diluted CH$_4$ concentrations are aggregated by NH$_3$. Therefore, CN$^-$ is more efficient to form in ice mixtures with excess NH$_3$.\\
+In CH$_4$ to NH$_3$ =3:2 ice mixtures, however, the cyanide ion formed is about half of that of the other ratios. The decrease is mainly because NH$_2$ (forming CH$_3$NH$_2$) has a competing relationship with CH$_2$, CH$_3$ and C$_2$H$_4$ radicals (forming C$_2$H$_6$ and C$_3$H$_8$). This competition supresses the production of intermediate CH$_3$NH$_2$, thus the formation of CN$^-$ (figure \ref{fig:CH4_dominated}). Therefore, the yield of CN$^-$ is the least in CH$_4$ to NH$_3$ ice mixture with ratio 3:2 while the yield of C$_2$H$_6$ is the greatest in the mixture with the same ratio(table \ref{tab:CNrate} and \ref{tab:fittingC2H6}). Figure of CN$^-$ and C$_2$H$_6$ (figure \ref{fig:C2H6_CN_comparison}) shows the formation of CN$^-$ in ice mixtures with diluted CH$_4$ has more CN$^-$ formed than C$_2$H$_6$. It is because ice mixtures with higher concentrations in CH$_4$ is more effective for one CH$_3$ radical to combine with another CH$_3$ radical. In contrast, CH$_3$ radicals formed in the ice mixtures with diluted CH$_4$ concentrations are aggregated by NH$_3$. Therefore, CN$^-$ is more efficient to form in ice mixtures with excess NH$_3$.\\
+
+The formation rate of CN$^-$ in CH$_4$:NH$_3$ = 3:2 ice mixtures is highest because they have similar photon dose. The absorption cross-section in the range of 120 - 175 nm by NH$_3$ is 1-2 $\times$ 10$^{-17}$ cm$^2$  measured by Cruz-Diaz et al. (2014)\cite{cruz2014vacuum}, while CH$_4$ is measured to be 1.5 $\times$ 10$^{-17}$ cm$^2$ at ly-$\alpha$ region and 0.1 $\times$ 10$^{-17}$ cm$^2$ at molecular hydrogen emition regions measured by same group\cite{cruz2014nonpolar}. Mentioned at chapter \ref{methods}, 19.1\% of photons emitted by our MDHL is ly-$\alpha$. It is therefore expected that the two species receives similar amount of photon dose when their relative ratio is CH$_4$:NH$_3$ = 3:2. With this similar photon dose, assuming their formation rate of CH$_3$ and NH$_2$ radicals are similar, the concentration of the two radicals in the ice mixtures are similar. Similar amount of CH$_3$ radical and NH$_2$ radicals can form CH$_3$NH$_2$ much easier than CH$_4$ surrounded by 5 NH$_2$ radicals. Therefore, a higher production rate of forming CN$^-$ is achieved.
 
 
 \begin{figure}
@@ -289,7 +291,7 @@ In CH$_4$ to NH$_3$ =3:2 ice mixtures, however, the cyanide ion formed is about 
 
 According to Blanksby and Ellison (2003), the dissociation energy for CH$_4$, becoming CH$_3$, CH$_2$, CH and C are 4.55, 4.79, 4.39 and 3.51 eV respectively at 298 K; whereas dissociation energy for NH$_3$, becoming NH$_2$ is 4.67 eV at 298 K\cite{blanksby2003bond}.\\
 
-Considering our MDHL with average energy of 9.27 eV, all of the above fragments may exist either in the form of radicals or combine with other radicals to form heavier molecules in our ice mixtures. Although increasing the photon energy does not create new fragmentation pathway, the choice of fragmentation pathways depends on photon energy.\\
+Considering our MDHL with average energy of 9.27 eV, all of the above fragments exist either in the form of radicals or combine with other radicals to form heavier molecules in our ice mixtures. Although increasing the photon energy does not create new fragmentation pathway, the choice of fragmentation pathways depends on photon energy.\\
 
 Several gaseous state measurements also support this statement. First, Gans et al. (2011) \cite{gans2011photolysis} changed VUV photon wavelengths from 121.6 nm (10. 2eV) to 118.2 nm (10.4eV) to dissociate the CH$_4$ molecules and ionize the fragments with the corresponding photon energy. Changing the output of the pulsed laser from 121.6 to 118.1 nm significantly changed the ratio of CH$_3^+$ and CH$_2^+$, produced from fragmentation, from 1: 1 to 1:2. This slight change of photon energy, from 10.2 eV to 10.4 eV has a significant change in the ratio between different pathways.\\
 
@@ -347,7 +349,9 @@ Reference: 1. Bossa et al. (2008) \cite{bossa2008carbamic} 2. Moore and Hudson (
 \end{figure}
 
 
-From figure \ref{fig:NSRRC_Lab_C3H8_C2H6}, we may observe that more C$_3$H$_8$ relative to C$_2$H$_6$ is produced by 30.4nm (40.8 eV) photons than by VUV photons. Considering the formation mechanisms of C$_2$H$_6$ and C$_3$H$_8$, equation (\ref{eq:C2H6} and \ref{eq:C3H81}), when MDHL VUV irradiation is replaced by He II 30.4 nm monochromatic light, the ratio of C$_3$H$_8$ to C$_2$H$_6$ in CH$_4$ to NH$_3$ = 3:2 ice mixtures irradiated by VUV irradiation is lower than that under EUV provided by NSRRC (figure \ref{fig:NSRRC_Lab_C3H8_C2H6}). There are many possible explanations, one of those maybe the internally excited C$_2$H$_6$ can break down to be C$_2$H$_4$, which implies the production of C$_3$H$_8$. Second, it may be caused by the increase in CH$_2$ radicals during fragmentation of CH$_4$, from the findings of Gans et al. (2011)\cite{gans2011photolysis}, the ratio of CH$_2$ radicals increases from 0.3 to 0.48 when photon energy increases from 121.6 nm to 118.2 nm in their pulsed laser experiments. Note that it is different from Tsai et al. (1980)\cite{tsai1980mass}.\\
+From figure \ref{fig:NSRRC_Lab_C3H8_C2H6}, more C$_3$H$_8$ relative to C$_2$H$_6$ is produced by 30.4nm (40.8 eV) photons than by VUV photons. Considering the formation mechanisms of C$_2$H$_6$ and C$_3$H$_8$, equation (\ref{eq:C2H6} and \ref{eq:C3H81}), when MDHL VUV irradiation is replaced by He II 30.4 nm monochromatic light, the ratio of C$_3$H$_8$ to C$_2$H$_6$ in CH$_4$:NH$_3$ = 3:2 ice mixtures irradiated by VUV irradiation is lower than that under EUV provided by NSRRC (figure \ref{fig:NSRRC_Lab_C3H8_C2H6}).\\
+
+From VUV photolysis experiments of Gans et al. (2011)\cite{gans2011photolysis}, CH$_2$ is more abundant than CH$_3$. However, EUV photodissociation experiments of Tsai and Eland (1980)\cite{tsai1980mass} CH$_3$ is more abundant than CH$_2$. Based on these two experimental results, we may conclude that fragment yields of CH$_4$ dissociation is photon energy dependent and more CH$_2$ than CH$_3$ is obtained in VUV range while more CH$_3$ should be obtained in EUV range in gas phase experiments. However, our results shows more C$_3$H$_8$ is formed when we use EUV photons as irradiation source. This unexpected contradiction is mainly because the peak C$_3$H$_8$ is only an tentative assignment which consists of longer carbon chain substances like butane and hexane, these molecules contribute to the same absorption bands.\\
 
 
 \begin{figure}
@@ -356,7 +360,7 @@ From figure \ref{fig:NSRRC_Lab_C3H8_C2H6}, we may observe that more C$_3$H$_8$ r
 \caption{The normalized destruction of CH$_4$ and NH$_3$ in CH$_4$ + NH$_3$ ice mixtures irradiated by VUV and EUV photons}
 \label{fig:normalized_reactants}
 \end{figure}
-
+w
 \begin{table}[htbp]
 \caption{The fitting results of reactants by equation $[R]=[R]e^{-kx}+C$}
 \label{tab:reactants}
@@ -424,18 +428,18 @@ Imanaka et al. & implied functional group & VUV (MDHL) & EUV (30.4 nm)\\
 \end{tabular}
 \end{table}
 
-We may get similar residues by using different initial reactants (replacing N$_2$ by NH$_3$). The similarities during formation of atomic nitrogens when breaking N$\equiv$N bonds in nitrogen molecules (N$_2$) and N-H bonds in ammonia give rise to this result. When photon energy is enough to break both NH bond and N$\equiv$N bond, similar experimental residues forms. Our results implies that the residues formed on Charon is similar to what they found on Titan, although their formation environments differs from gaseous phase with N$_2$ dominating to solid phase with NH$_3$.\\
+Similar residues is obtained by using different initial reactants (replacing N$_2$ by NH$_3$). The similarities during formation of atomic nitrogens when breaking N$\equiv$N bonds in nitrogen molecules (N$_2$) and N-H bonds in ammonia give rise to this result. When photon energy is enough to break both NH bond and N$\equiv$N bond, similar experimental residues forms. Our results implies that the residues formed on Charon is similar to what they found on Titan, although their formation environments differs from gaseous phase with N$_2$ dominating to solid phase with NH$_3$.\\
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/chapter3/residue.png}
-\caption{The IR spectrum of residues in after CH$_4$:NH$_3$ = 3:2 experiments and the accumulate residues after MDHL experiments and NSRRC experiments.}
+\caption{IR spectra of accumulated residues of CH$_4$:NH$_3$=3:2 ice mixtures irradiated with VUV photons which provided by MDHL(pink solid line) and  monochromatic EUV photons which provided by NSRRC (orange solid line).}
 \label{fig:residues}
 \end{figure}
 
 
 \section{Summary} % should be in chapter 4?
 
-The main product of VUV and EUV irradiated CH$_4$+NH$_3$ ice mixtures are C$_2$H$_6$ and CN$^-$. C$_3$H$_8$ is also produced by C$_2$H$_6$ or C$_2$H$_2$. We do several investigations towards CH$_4$+NH$_3$ ice mixtures. First, by changing ratio of CH$_4$ to NH$_3$ ice mixtures, CN$^-$ production is more effective in NH$_3$ dominated ice mixtures. While in contrast, C$_2$H$_6$ is the main product when CH$_4$ dominates. Second, by changing the photon source to EUV irradiation, the yield of C$_3$H$_8$ increases. By studying the production efficiencies, the difference in photo-production yield is mainly caused by the decrease in photo-destruction cross-section in the reactants. Finally, we compare our residues obtained with laboratory produced Taitan tholins, the similar infrared spectrum shows a similar functional groups in residues. Our result implies that the tholin on Charon should be similar to that of Titan.
+The main product of VUV and EUV irradiated CH$_4$+NH$_3$ ice mixtures are C$_2$H$_6$ and CN$^-$. C$_3$H$_8$ is also produced by C$_2$H$_6$ or C$_2$H$_2$. We do several investigations towards CH$_4$+NH$_3$ ice mixtures. First, by changing ratio of CH$_4$ to NH$_3$ ice mixtures, CN$^-$ production is more effective in NH$_3$ dominated ice mixtures. While in contrast, C$_2$H$_6$ is the main product when CH$_4$ dominates. Second, by changing the photon source to EUV irradiation, the difference in photo-production yield is mainly caused by the decrease in photo-destruction cross-section in the reactants. Finally, we compare our residues obtained with laboratory produced Taitan tholins, the similar infrared spectrum shows a similar functional groups in residues. Our result implies that the tholin on Charon should be similar to that of Titan.
 
 
