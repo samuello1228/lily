@@ -148,7 +148,6 @@ The paper width is  &\printlength{\paperwidth}
 {{{版權所有\copyright\ \@author\ \@copyyear} \par}}
 {\hspace{5cm}}
 \end{center}
-\renewcommand\bg@material{}
 \null\vfill
 \end{alwayssingle}}
 %--------end of title page for thesis
