@@ -37,7 +37,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{CJKutf8,CJKnumb,CJKvert,fancyvrb,verbatim}
 \RequirePackage{pdfpages,pdflscape,ifthen,showframe,printlen,calculator}
-\RequirePackage[bookmarks=true,unicode=true,colorlinks=true,
+\RequirePackage[bookmarks=true,unicode=true,colorlinks=false,
 pdfborder={0 0 0},pdfauthor={JCLO},linktoc=all,
 pdftitle={An example in TeX/LaTeX/XeLaTeX}]{hyperref}       % 超聯結
 
