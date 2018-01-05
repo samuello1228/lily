@@ -181,7 +181,7 @@ The paper width is  &\printlength{\paperwidth}
 % acknowldegements
 
 \newenvironment{acknowledgements}
-{\begin{onecol}{謝誌}} 
+{\begin{onecol}{誌謝}} 
 {\end{onecol}}
 
 % abstract for english
